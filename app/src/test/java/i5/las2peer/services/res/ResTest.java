@@ -105,6 +105,15 @@ public class ResTest {
       Assert.assertTrue(object79846.containsKey("id"));
       Object object79846_2 = object79846.get("id");
       Assert.assertTrue(response instanceof Number);
+      Assert.assertTrue(response instanceof JSONObject);
+      JSONObject object660106 = (JSONObject) response;
+      Assert.assertTrue(object660106.containsKey("info"));
+      Object object660106_2 = object660106.get("info");
+      Assert.assertTrue(response instanceof JSONObject);
+      JSONObject object294414 = (JSONObject) response;
+      Assert.assertTrue(object294414.containsKey("message"));
+      Object object294414_2 = object294414.get("message");
+      Assert.assertTrue(response instanceof String);
 
       System.out.println("Result of 'test$HTTP_Method_Name$': " + result.getResponse().trim());
     } catch (Exception e) {
