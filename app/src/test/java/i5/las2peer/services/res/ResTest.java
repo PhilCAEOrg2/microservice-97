@@ -114,6 +114,8 @@ public class ResTest {
       Assert.assertTrue(object294414.containsKey("message"));
       Object object294414_2 = object294414.get("message");
       Assert.assertTrue(response instanceof String);
+      
+      Assert.assertTrue("Status code equals 200 [20830]", result.getHttpCode() == 200);
 
       System.out.println("Result of 'test$HTTP_Method_Name$': " + result.getResponse().trim());
     } catch (Exception e) {
